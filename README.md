@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+/* VERSION 1
+Overview
+1. index.html 
+    a. Title of Application 
+    b. Explanation/Instruction 
+    c. Text Area Input 
+    d. Submit Button 
+    e. Preview Section
+    d. Open All Links Button 
+2. script.js 
+    a. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+CODE PROCEDURE 
+1. Converts text area input into a string 
+2. Use JS match, or similar, to find all valid links in input. 
+    a. Accepts spaces, return, and no spaces between valid links 
+3. Push each valid link to an empty array 
+4. Number and Print each link in the Preview Section 
+    a. Display total number of links too
+5. Open all links in new tab when a button is pressed 
 
-In the project directory, you can run:
 
-### `npm start`
+Building Steps 
+1. JS
+2. HTML 
+3. Integration between JS & HTML 
+4. CSS 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+/* VERSION 2
+Overview
+1. index.html 
+    a. Title of Application 
+    b. Explanation/Instruction 
+    c. Text Area Input 
+    d. Submit Button 
+    e. Preview Section
+    d. Open All Links Button 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Building Blocks
+1. React 
+    a. Main Component 
+        i. Title and Instructions 
+        ii. Input Text Area State 
+    b. URL Input Submission Component
+        i. Create a text area to hold the urls
+            - Connect text to input text area state 
+        ii. Create a button to manipulate the text
+            - Parse the input text area
+            - Generate a preview of all parsed urls 
+    c. Preview Component 
+        i. Display a text area that lists all the generated links 
+            - Number each link and show the total amount 
+        ii. Create a button that opens all urls in a new tab 
 
-### `npm run build`
+2. CSS 
+    a. Make it look pretty 
+    b. Maybe, blue and dark theme 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*/

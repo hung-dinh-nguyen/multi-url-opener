@@ -40,6 +40,7 @@ class App extends React.Component{
       }; 
       this.handleChange = this.handleChange.bind(this);
       this.parser = this.parser.bind(this);
+      this.opener = this.opener.bind(this);
   }
 
   handleChange(e) {
@@ -54,23 +55,36 @@ class App extends React.Component{
     const re_url = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+(:[0-9]+)?|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)/ig
 
     let input = this.state.input;
-    let urls = input.match(re_url)
+    var urls = input.match(re_url)
     var urlString = '';
     var i = 1
 
-    console.log(urls)
+    console.log(urls);
     
     urls.forEach(url => {
       urlString =  urlString + (i++) + " - " + url + '\n'; 
     });
     
-    console.log(urlString)
+    console.log(urlString);
 
     this.setState({
-      preview: urlString,
+      preview: urlString
     })
   };
 
+  opener() {
+    const re_url = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+(:[0-9]+)?|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)/ig
+
+    let input = this.state.input;
+    var urls = input.match(re_url)
+
+    console.log(urls);
+
+    urls.forEach(url => {
+      window.open(url)
+    })
+  }
+ 
   render() {
     return (
     <div className="App">
@@ -80,13 +94,14 @@ class App extends React.Component{
 
           <h2>Instructions</h2>
             <ol>
-              <li>Put URLs into input text area</li>
+              <li>Enter one full URL address per line</li>
+              <li>Make sure to allow pop-ups and redirects for this site</li>
               <li>Click on "Preview" to create a numbered list of links</li>
-              <li>Press on "Open All" to open all links into new tabs</li>
+              <li>Press on "Open" to open all links into new tabs</li>
             </ol>
         </div>
         <UrlParser input={this.state.input} onChange={this.handleChange} onClick={this.parser}/>
-        <Previewer preview={this.state.preview}/> 
+        <Previewer preview={this.state.preview} onClick={this.opener}/> 
     </div>
     );
   }

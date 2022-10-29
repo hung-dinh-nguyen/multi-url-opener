@@ -12,6 +12,11 @@ const Previewer = (props) => {
                 value={props.preview}
                 readOnly
             />
+            <button 
+                id='preview-button'
+                className='preview-button'
+                onClick={props.onClick}
+            />
         </div>
     )
 };

@@ -48,7 +48,7 @@ class App extends React.Component{
       super(props); 
       this.state = {
           input: "Enter URLs Here",
-          preview: ""
+          preview: "test",
       }; 
       this.handleChange = this.handleChange.bind(this);
       this.parser = this.parser.bind(this);
@@ -58,6 +58,7 @@ class App extends React.Component{
       this.setState({
           input: e.target.value
       }); 
+      console.log(this.state.input)
   }
 
 
@@ -67,10 +68,12 @@ class App extends React.Component{
     let input = this.state.input;
     let urls = input.match(re_url)
     var urlString = '';
+    var i = 1
     
-    for (let i=0; i<urls.length; i++) {
-      urlString =  (i+1) + " " + urls[i] + '\n'; 
-    };
+    urls.forEach(url => {
+      urlString =  urlString + (i++) + " " + url + '\n'; 
+    });
+
     console.log(urlString)
 
     this.setState({
@@ -93,7 +96,7 @@ class App extends React.Component{
             </ol>
         </div>
         <UrlParser input={this.state.input} onChange={this.handleChange} onClick={this.parser}/>
-        <Previewer/> 
+        <Previewer preview={this.state.preview}/> 
     </div>
     );
   }

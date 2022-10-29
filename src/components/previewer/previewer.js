@@ -10,6 +10,7 @@ const Previewer = (props) => {
                 onChange={props.onChange}
                 type='text'
                 value={props.preview}
+                readOnly
             />
         </div>
     )

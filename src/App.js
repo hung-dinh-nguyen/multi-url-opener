@@ -75,7 +75,7 @@ class App extends React.Component{
           <h1>Multi-URL Opener</h1>
             <p>Tool to Open Multiple URLs at Once!</p>
           <div className="instructions">
-            <h1>Instructions</h1>
+            <h2>Instructions</h2>
               <ol>
                 <li>Enter one full URL address per line</li>
                 <li>Make sure to allow pop-ups and redirects for this site</li>

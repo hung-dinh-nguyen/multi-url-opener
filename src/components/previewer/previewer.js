@@ -4,7 +4,7 @@ import './previewer.css'
 const Previewer = (props) => {
     return (
         <div className='preview-div'>
-            <h1>Preview</h1>
+            <h2>Preview</h2>
             <textarea 
                 id='preview-text'
                 class='preview-text'

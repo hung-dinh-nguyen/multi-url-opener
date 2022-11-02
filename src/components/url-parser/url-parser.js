@@ -4,7 +4,7 @@ import './url-parser.css'
 const UrlParser = (props) => {
     return (
         <div className='input-div'>
-            <h1>Input</h1>
+            <h2>Input</h2>
             <textarea 
                 id='input-text'
                 className='input-text'

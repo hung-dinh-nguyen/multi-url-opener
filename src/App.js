@@ -91,14 +91,16 @@ class App extends React.Component{
         <div className="intro">
           <h1>Multi-URL Opener</h1>
             <h4>Tool to Open Multiple URLs at Once!</h4>
-
-          <h2>Instructions</h2>
-            <ol>
-              <li>Enter one full URL address per line</li>
-              <li>Make sure to allow pop-ups and redirects for this site</li>
-              <li>Click on "Preview" to create a numbered list of links</li>
-              <li>Press on "Open" to open all links into new tabs</li>
-            </ol>
+          <div className="instructions">
+            <h2>Instructions</h2>
+              <ol>
+                <li>Enter one full URL address per line</li>
+                <li>Make sure to allow pop-ups and redirects for this site</li>
+                <li>Click on "Preview" to create a numbered list of links</li>
+                <li>Press on "Open" to open all links into new tabs</li>
+              </ol>
+          </div>
+         
         </div>
         <UrlParser input={this.state.input} onChange={this.handleChange} onClick={this.parser}/>
         <Previewer preview={this.state.preview} onClick={this.opener}/> 

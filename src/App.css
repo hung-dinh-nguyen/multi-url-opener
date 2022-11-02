@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .App-logo {
@@ -43,4 +45,19 @@ body {
 
 * {
   border: 1px solid black;
+}
+
+.instructions {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+ol {
+  width: 50%;
+  margin: auto;
+}
+
+li {
+  text-align: left;
 }

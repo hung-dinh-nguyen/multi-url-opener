@@ -80,7 +80,7 @@ class App extends React.Component{
                 <li>Enter one full URL address per line</li>
                 <li>Make sure to allow pop-ups and redirects for this site</li>
                 <li>Click on "PREVIEW" to create a numbered list of links</li>
-                <li>Press on "OPEN" to open all links into new tabs</li>
+                <li>Press on "OPEN" to open all URLs in new tabs</li>
               </ol>
           </div>
          

@@ -1,0 +1,14 @@
+.preview-div {
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    padding: auto;
+
+}
+
+.preview-text {
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+

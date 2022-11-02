@@ -17,7 +17,7 @@ const Previewer = (props) => {
                 id='preview-button'
                 className='preview-button'
                 onClick={props.onClick}
-            >Open</button>
+            >OPEN</button>
         </div>
     )
 };

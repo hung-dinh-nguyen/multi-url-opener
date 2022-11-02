@@ -1,5 +1,5 @@
 .input-div {
-    width: 50%;
+    width: 75%;
     text-align: center;
     justify-content: center;
     padding: auto;
@@ -8,6 +8,15 @@
 
 .input-text {
     width: 75%;
+    height: 20vh;
     display: block;
     margin: auto;
+}
+
+.input-button {
+    width: 25%;
+    height: 30px;
+    margin-top: 10px;
+    padding: 0px;
+
 }

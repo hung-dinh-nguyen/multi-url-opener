@@ -16,7 +16,7 @@ const UrlParser = (props) => {
                 id='input-button'
                 className='input-button'
                 onClick={props.onClick}
-            >Preview</button>
+            >PREVIEW</button>
         </div>
     )
 };

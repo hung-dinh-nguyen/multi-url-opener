@@ -36,7 +36,7 @@ class App extends React.Component{
       super(props); 
       this.state = {
           input: "Enter URLs Here",
-          preview: "test",
+          preview: "",
       }; 
       this.handleChange = this.handleChange.bind(this);
       this.parser = this.parser.bind(this);
@@ -96,8 +96,8 @@ class App extends React.Component{
               <ol>
                 <li>Enter one full URL address per line</li>
                 <li>Make sure to allow pop-ups and redirects for this site</li>
-                <li>Click on "Preview" to create a numbered list of links</li>
-                <li>Press on "Open" to open all links into new tabs</li>
+                <li>Click on "PREVIEW" to create a numbered list of links</li>
+                <li>Press on "OPEN" to open all links into new tabs</li>
               </ol>
           </div>
          

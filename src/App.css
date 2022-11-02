@@ -58,3 +58,18 @@ ol {
 li {
   text-align: left;
 }
+
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin-top: 0px;
+}
+

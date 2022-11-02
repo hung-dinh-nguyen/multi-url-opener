@@ -14,23 +14,6 @@ http://example/cat/http://example/dog`
 */
 
 
-/*
-const re_url = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+(:[0-9]+)?|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)/ig
-
-function inputParser(input) { 
-    return input.match(re_url)
-}
-
-var arrUrls = inputParser(input_ex)
-console.log(arrUrls)
-
-function openLinks(urls) {
-    for (let link in urls) {
-        window.open(link, "_blank"); 
-    }
-}
-*/
-
 class App extends React.Component{
   constructor(props) {
       super(props); 
@@ -90,9 +73,9 @@ class App extends React.Component{
     <div className="App">
         <div className="intro">
           <h1>Multi-URL Opener</h1>
-            <h4>Tool to Open Multiple URLs at Once!</h4>
+            <p>Tool to Open Multiple URLs at Once!</p>
           <div className="instructions">
-            <h2>Instructions</h2>
+            <h1>Instructions</h1>
               <ol>
                 <li>Enter one full URL address per line</li>
                 <li>Make sure to allow pop-ups and redirects for this site</li>

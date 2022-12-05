@@ -66,7 +66,7 @@ class App extends React.Component{
     urls.forEach(url => {
       window.open(url)
     })
-  }
+  } 
  
   render() {
     return (
